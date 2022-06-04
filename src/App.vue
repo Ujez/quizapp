@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 const questions = ref([
   {
@@ -70,6 +71,7 @@ const NextQuestion = () => {
 
 <template>
 	<main class="app">
+	<hello-world/>
 		<h1>The Quiz</h1>
 		
 		<section class="quiz" v-if="!quizCompleted">
